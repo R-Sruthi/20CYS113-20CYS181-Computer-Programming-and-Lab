@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct comp{
+    int real1;
+    int real2;
+    int comp1;
+    int comp2;
+}c;
+int main(){
+    int real,complex;
+    printf("enter the first real no");
+    scanf("%d",&c.real1);
+    printf("enter the second real no");
+    scanf("%d",&c.real2);
+    printf("enter the complex 1 part");
+    scanf("%d",&c.comp1);
+    printf("enter the complex 2 part");
+    scanf("%d",&c.comp2);
+    
+    real=((c.real1*c.real2)-(c.comp1*c.comp2));
+    complex=((c.real1*c.comp2)+(c.real2*c.comp1));
+    
+    printf("the multiplication id %d + %di", real,complex);
+    return 0;
+    
+    
+}
